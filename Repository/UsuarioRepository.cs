@@ -61,9 +61,9 @@ namespace SmartBox.Repositorios
             UsuarioId.Senha = usuario.Senha;
             UsuarioId.Telefone = usuario.Telefone;
             UsuarioId.Nome = usuario.Nome;
-            _dbContext.Usuarios.Update(usuario);
+            _dbContext.Usuarios.Update(UsuarioId);
             await _dbContext.SaveChangesAsync();
-            return usuario;
+            return UsuarioId;
         }
     }
 }

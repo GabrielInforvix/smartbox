@@ -61,9 +61,9 @@ namespace SmartBox.Repositorios
             BoxId.external_id = box.external_id;
             BoxId.created_at = box.created_at;
             BoxId.updated_at = box.updated_at;
-            _dbContext.Boxes.Update(box);
+            _dbContext.Boxes.Update(BoxId);
             await _dbContext.SaveChangesAsync();
-            return box;
+            return BoxId;
         }
     }
 }
