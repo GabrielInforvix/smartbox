@@ -13,6 +13,7 @@ namespace SmartBox.DB
         }
 
         public DbSet<UsuariosModel> Usuarios { get; set; }
+        public DbSet<BoxesModel> Boxes { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

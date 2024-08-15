@@ -25,6 +25,7 @@ namespace smartbox
                 );
 
             builder.Services.AddScoped<IUsuariosRepositorio, UsuarioRepository>();
+            builder.Services.AddScoped<IBoxesRepository, BoxesRepository>();
 
             var app = builder.Build();
 

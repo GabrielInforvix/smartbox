@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using SmartBox.DB;
@@ -11,9 +12,11 @@ using SmartBox.DB;
 namespace smartbox.Migrations
 {
     [DbContext(typeof(SmartBoxDBContext))]
-    partial class SmartBoxDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240813225817_TabelaDeBox")]
+    partial class TabelaDeBox
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

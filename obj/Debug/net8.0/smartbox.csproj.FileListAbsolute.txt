@@ -102,3 +102,4 @@ C:\Projetos\GitHub\smartbox\smartbox\obj\Debug\net8.0\refint\smartbox.dll
 C:\Projetos\GitHub\smartbox\smartbox\obj\Debug\net8.0\smartbox.pdb
 C:\Projetos\GitHub\smartbox\smartbox\obj\Debug\net8.0\smartbox.genruntimeconfig.cache
 C:\Projetos\GitHub\smartbox\smartbox\obj\Debug\net8.0\ref\smartbox.dll
+C:\Projetos\GitHub\smartbox\smartbox\obj\Debug\net8.0\smartbox.sourcelink.json
