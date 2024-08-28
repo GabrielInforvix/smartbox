@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("smartbox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00edd4e0f1cd115bc8157632fc4ea64d705ec08b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a126f9d94a558579b220284c992c803c76839e39")]
 [assembly: System.Reflection.AssemblyProductAttribute("smartbox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("smartbox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

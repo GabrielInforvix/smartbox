@@ -2,6 +2,7 @@
 using SmartBox.Model;
 using SmartBox.Repositorios.Interfaces;
 
+
 namespace SmartBox.Controllers
 {
     [Route("v1/[controller]")]

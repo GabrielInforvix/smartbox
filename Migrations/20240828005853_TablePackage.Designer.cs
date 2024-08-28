@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using SmartBox.DB;
@@ -11,9 +12,11 @@ using SmartBox.DB;
 namespace smartbox.Migrations
 {
     [DbContext(typeof(SmartBoxDBContext))]
-    partial class SmartBoxDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240828005853_TablePackage")]
+    partial class TablePackage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,32 +45,6 @@ namespace smartbox.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Boxes");
-                });
-
-            modelBuilder.Entity("SmartBox.Model.ColumnsModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("boxesId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("created_at")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("pos")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime?>("updated_at")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Columns");
                 });
 
             modelBuilder.Entity("SmartBox.Model.PackageModel", b =>
